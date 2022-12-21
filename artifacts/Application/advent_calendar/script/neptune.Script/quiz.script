@@ -1,0 +1,75 @@
+oText7.setText("Find the complexity of the given function: function complexity(int n) { var i = 1; var s = 1; while ( s  <  n ) { s = s + i;  i++; } }");
+function submit(){
+    oInput.setValueState("Success");
+    oInput1.setValueState("Success");
+    oInput2.setValueState("Success");
+    oInput3.setValueState("Success");
+    oInput4.setValueState("Success");
+
+    var q1=0;
+    var q2=0;
+    var q3=0;
+    var q4=0;
+    var q=0;
+    var state = false;
+    var state1 = false;
+    var state2 = false;
+    var state3 = false;
+    var state4 = false;
+    if (oInput.getValue() === "1B1D86" || oInput.getValue() === "1b1d86") {
+        q+=1;
+        state=true;
+
+    } else {
+        q+=0;
+    }
+    if (oInput1.getValue() === "meat" || oInput1.getValue() === "Meat") {
+        q1+=1;
+        state1=true;
+
+    } else {
+        q1+=0;
+    }
+    if (oInput2.getValue() === "false") {
+        q2+=1;
+        state2=true;
+
+    } else {
+        q2+=0;
+    }
+    if (oInput3.getValue() === "23" || oInput3.getValue() === 23) {
+        q3+=1;
+        state3=true;
+
+    } else {
+        q3+=0;
+    }
+    if (oInput4.getValue() === "sqrt(n)" || oInput4.getValue() === "n^(1/2)" || oInput4.getValue() === "n^(0.5)" || oInput4.getValue() === "Math.sqrt(n)") {
+        q4+=1;
+        state4=true;
+
+    } else {
+        q4+=0;
+    }
+    if (state === true && state1 === true && state2 === true && state3 === true && state4 === true) {
+       sap.m.MessageToast.show("Congrats! You got everything right.")
+    } else {
+        if (state === false) {
+        oInput.setValueState("Error");
+        }
+        if (state1 === false) {
+        oInput1.setValueState("Error");
+        }
+        if (state2 === false) {
+        oInput2.setValueState("Error");
+        }
+        if (state3 === false) {
+        oInput3.setValueState("Error");
+        }
+        if (state4 === false) {
+        oInput4.setValueState("Error");
+        }
+        sap.m.MessageToast.show("Sorry, try again!")
+    }
+    
+}

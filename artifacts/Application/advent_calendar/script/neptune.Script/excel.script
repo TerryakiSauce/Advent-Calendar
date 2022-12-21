@@ -1,0 +1,517 @@
+var excel = [
+  {
+      "Term": "ABAP classic",
+      "Definition": "ABAP classic is a programming language developed by SAP for the development of business applications in the SAP environment."
+    },
+    {
+      "Term": "ABAP cloud",
+      "Definition": "Standardized ABAP language for cloud-ready programming."
+    },
+    {
+      "Term": "ABAP Development Tools  (ADT)",
+      "Definition": "Integrated development environment (IDE) for ABAP development implemented as a plugin for the Eclipse platform."
+    },
+    {
+      "Term": "ABAP Test Cockpit (ATC) ",
+      "Definition": "Toolset directly integrated in ABT for doing static and dynamic quality checking of ABAP code and associated objects."
+    },
+    {
+      "Term": "Agile",
+      "Definition": "Agile development is a set of processes for creating software that includes being creative and flexible in software development. This means that the code is kept simple, is tested often, and, instead of waiting for everything to be finished, incremental but functional parts of the software are released as soon as they are ready. "
+    },
+    {
+      "Term": "API",
+      "Definition": "An application programming interface (API) is a way for two or more computer programs to communicate with each other."
+    },
+    {
+      "Term": "BANT ",
+      "Definition": "Sales framework to qualify leads checking if a prospect has, the BUDGET to pay for our product/services, the AUTHORITY to make the purchase decision,a NEED which is a business problem that can be solved through our platformand a TIMELINE that requires him to make a purchase decision within less than 12 months"
+    },
+    {
+      "Term": "BAPI",
+      "Definition": "BAPIs (Business Application Programming Interfaces) are APIs. So they make SAP systems accessible to other SAP systems and third-party applications."
+    },
+    {
+      "Term": "BPM",
+      "Definition": "Business process management software automates, executes, and monitors business processes from beginning to end by connecting people to people, applications to applications, and people to applications."
+    },
+    {
+      "Term": "Canvas",
+      "Definition": "The canvas element is part of HTML5 and allows for dynamic, scriptable rendering of 2D and 3D shapes and bitmap images."
+    },
+    {
+      "Term": "CI/CD",
+      "Definition": "CI/CD is a method to frequently deliver apps to customers by introducing automation into the stages of app development. The main concepts attributed to CI/CD are continuous integration, continuous delivery, and continuous deployment"
+    },
+    {
+      "Term": "Citizen developer ",
+      "Definition": "Citizen developers are business users with little to no coding experience that build applications with IT-approved technology."
+    },
+    {
+      "Term": "Cookie",
+      "Definition": "A special object containing state/status information about the client that can be accessed by the server. Included in that state object is a description of the range of URLs for which that state is valid."
+    },
+    {
+      "Term": "Cordova",
+      "Definition": "A mobile development framework that allows to use standard web technologies - HTML5, CSS3, and JavaScript for cross-platform development, avoiding each mobile platform’s native development language. Cordova wraps an HTML/JavaScript app into a native container which can access the device functions of several platforms."
+    },
+    {
+      "Term": "COTS",
+      "Definition": "Commercial off-the-shelf refers to an out-of-the-box solution that has minimal room for customization. And since these solutions are largely prebuilt, even when customization is possible, it’s costly."
+    },
+    {
+      "Term": "CRM",
+      "Definition": "Customer relationship management is a process in which a business or other organization administers its interactions with customers, typically using data analysis to study large amounts of information."
+    },
+    {
+      "Term": "CRM ",
+      "Definition": "Salesforce"
+    },
+    {
+      "Term": "CSS",
+      "Definition": "A stylesheet language that is used for presentation and formatting content on the web-pages, including font, size, color, spacing, border and location of HTML information. "
+    },
+    {
+      "Term": "Customer ",
+      "Definition": "Any company that has an ongoing business relationship with and that pays for our services. "
+    },
+    {
+      "Term": "DevOps",
+      "Definition": "DevOps is a set of practices, tools, and a cultural philosophy that automate and integrate the processes between software development and IT teams"
+    },
+    {
+      "Term": "Docker",
+      "Definition": "A software virtualization platform that allows user create a container inside your computer. Container is a small virtual computer with it’s own OS and all setup that is needed, where the user can run any software as on the usual computer."
+    },
+    {
+      "Term": "DOM ",
+      "Definition": "The DOM (Document Object Model) is an API that represents and interacts with any HTML or XML document. The DOM is a document model loaded in the browser and representing the document as a node tree, where each node represents part of the document."
+    },
+    {
+      "Term": "Enterprise resource planning",
+      "Definition": "Enterprise resource planning (ERP) refers to a type of software that organizations use to manage day-to-day business activities such as accounting, procurement, project management, risk management and compliance, and supply chain operations"
+    },
+    {
+      "Term": "ERP",
+      "Definition": "A type of business-management software used to collect data, store, manage and interpret it. ERP integrates information from HR, financial, warehouse management and other departments into a unified program."
+    },
+    {
+      "Term": "Fiori Standard Apps",
+      "Definition": "SAP Fiori standard apps are ready to use SAPUI5 applications. They’re based on the SAP Fiori design guidelines. They’re customizable and extensible."
+    },
+    {
+      "Term": "Git",
+      "Definition": "Git tracks the changes you make to files, so you have a record of what has been done, and you can revert to specific versions should you ever need to. Git also makes collaboration easier, allowing changes by multiple people to all be merged into one source. "
+    },
+    {
+      "Term": "HTML",
+      "Definition": "Hypertext Markup Language, the document standard of the World Wide Web for creating web pages and web applications. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document."
+    },
+    {
+      "Term": "ICP ",
+      "Definition": "Ideal Customer Profile – a set of criteria (geo, segment, business problem and solution request) to whom we want to sell our solution. "
+    },
+    {
+      "Term": "IDP",
+      "Definition": " Intelligent document processing provides AI-based data classification and extraction capabilities to eliminate the manual work associated with processing  documents for use with other downstream systems."
+    },
+    {
+      "Term": "ISO/IEC JTC 1",
+      "Definition": " It is a joint technical committee of the International Organization for Standardization and the International Electrotechnical Commission. Its purpose is to develop, maintain and promote standards in the fields of information and communications technology."
+    },
+    {
+      "Term": "Javascript Arity",
+      "Definition": "Arity is the term used to refer to the number of arguments or operands in a function or operation, respectively. You're most likely to come across this word in the realm of JavaScript when it's used to mention the number of arguments expected by a JavaScript function."
+    },
+    {
+      "Term": "JavaScript Closure",
+      "Definition": "In JavaScript, closure is an inner function, that's accessible outside of its outer function's scope, with its connection to the outer function's variables still intact."
+    },
+    {
+      "Term": "JavaScript IIFE",
+      "Definition": "Immediately Invoked Function Expression is a JavaScript function that runs as soon as it is defined."
+    },
+    {
+      "Term": "JavaScript Memoization",
+      "Definition": "Memoization is a programming technique that attempts to increase a function’s performance by caching its previously computed results. Because JavaScript objects behave like associative arrays, they are ideal candidates to act as caches. Each time a memoized function is called, its parameters are used to index the cache."
+    },
+    {
+      "Term": "JavaScript Promises",
+      "Definition": "A promise represents the result of the asynchronous function. Promises can be used to avoid chaining callbacks. In JavaScript,  so whenever JavaScript Code Execute as Asynchronously, need to handle an operation as one of the ways would be using promises."
+    },
+    {
+      "Term": "JavaScript Sentinel",
+      "Definition": "In programming, sentinels are values that are used to indicate the end of a loop or process. They can also be called \"flags\"."
+    },
+    {
+      "Term": "jQuery Mobile",
+      "Definition": "A mobile framework for creating mobile web applications."
+    },
+    {
+      "Term": "Kubernetes ",
+      "Definition": "It is an open source platform designed to manage a cluster of Linux containers as a single system. Kubernetes manages and runs Docker containers on a large number of hosts, and also provides the co-location and replication of a large number of containers."
+    },
+    {
+      "Term": "Landscape Pattern",
+      "Definition": "Defines if a technical system is used by one or several product systems to calculate update and upgrade methods. The landscape pattern can be defined as “hub” system."
+    },
+    {
+      "Term": "LDAP ",
+      "Definition": "Lightweight Directory Access Protocol) is one of the core protocols that was developed for directory services (the process of securely managing users and their access rights to IT resources)"
+    },
+    {
+      "Term": "Lead",
+      "Definition": "Any incoming contact stored in our CRM that has shown interest in product and has granted us permission to contact."
+    },
+    {
+      "Term": "Low-code/No-code tools",
+      "Definition": "Toolset to develop apps with little or no code, mostly visual and drag and drop simplicity"
+    },
+    {
+      "Term": "Master Data",
+      "Definition": "Master data is a collection of information about a person or an object, e.g. a cost object, vendor, or G/L account. "
+    },
+    {
+      "Term": "MQL",
+      "Definition": "Any Lead stored in our CRM belonging to a company that fullfils some or all of the criteria of our ICP. "
+    },
+    {
+      "Term": "Native Mobile App",
+      "Definition": "A native application is a software program that is developed for use on a particular platform or device. Because a native app is built for use on a particular device and its OS, it has the ability to use device-specific hardware and software."
+    },
+    {
+      "Term": "Neptune  App Editor",
+      "Definition": "The App Editor is an editor for developing applications using the JavaScript libraries React.js and Vue.js. React.js and Vue.js are the most popular frontend frameworks to build web applications with JavaScript."
+    },
+    {
+      "Term": "Neptune API Client",
+      "Definition": "With the API Client, you send requests to test the response of a REST API."
+    },
+    {
+      "Term": "Neptune API Designer",
+      "Definition": "  With the API Designer, you create and configure API definitions. You can easily define and update APIs at any stage of the designing process. The API Designer makes APIs reusable for many applications by just adding that API to the application attributes."
+    },
+    {
+      "Term": "Neptune App Designer",
+      "Definition": "The App Designer is the central starting point for low-code application development. This is where you design the interface of your application, implement functionalities, and integrate data from resources."
+    },
+    {
+      "Term": "Neptune Audit Log",
+      "Definition": "With the Audit Log, you can monitor all Cockpit activities. You can filter activities by date or affected service. You can also search for specific object IDs or users."
+    },
+    {
+      "Term": "Neptune Certificates",
+      "Definition": "With Certificates, you can generate a self-signed certificate to grant access to resources or import a certificate from authorised resources."
+    },
+    {
+      "Term": "Neptune Cockpit",
+      "Definition": "The cockpit is the starting point and main control element to create your applications. The cockpit is divided in eleven service groups, for example, Development and Design. These service groups include the services that you need for creating, running, testing, and maintaining applications."
+    },
+    {
+      "Term": "Neptune Code Snippets",
+      "Definition": "In Code Snippets, you configure code snippets that you can use in the App Designer and the Script Editor. The idea of code snippets is to reduce the amount of custom code as much as possible. Reusing frequently used code enables you to focus on the processes and functionalities of the application."
+    },
+    {
+      "Term": "Neptune Connector",
+      "Definition": "  With Connector, you publish data sources to be used in the Adaptive Designer. You set up a connector by selecting a data source that you want to integrate into an adaptive application, and defining inputs and outputs of data sources. Data sources are database tables from Table Definition, scripts from Server Script, and APIs from API Designe or SAP API Factory."
+    },
+    {
+      "Term": "Neptune Development",
+      "Definition": "n Development Package, you organize and group artifacts. These artifacts, for example, APIs, applications, or themes, can be assigned to a package for better handling."
+    },
+    {
+      "Term": "Neptune Documentation",
+      "Definition": "Documentation is a component for creating end-user documentation for your applications. This can be used to create documents in many languages, you just need to select the language and then start creating documents. Also, you can use it to make a guided tour of your application."
+    },
+    {
+      "Term": "Neptune Email Template",
+      "Definition": "With Email Template, you can create templates for emails. Server scripts can use these templates to send email notifications from a workflow step, using the Workflow editor."
+    },
+    {
+      "Term": "Neptune Import LDAP",
+      "Definition": "LDAP (Lightweight Directory Access Protocol) is a software protocol for enabling anyone to locate organizations, individuals, and other resources, for example, files and devices in a network, whether on the internet or in a corporate intranet."
+    },
+    {
+      "Term": "Neptune Marketplace",
+      "Definition": "The Marketplace replaces the existing ‘Store’ within the Cockpits of both the Open and SAP Editions and is also available within the DXP Portal. It contains Public and Private catalogs of solutions, application building blocks, and more."
+    },
+    {
+      "Term": "Neptune Media Library",
+      "Definition": "In the Media Library, you store all media files that you want to integrate into your application or use in other services. The Media Library organizes folders by file type. To improve searchability, only store media files in a folder that corresponds to their own file type. For example, do not store images in a folder called \"videos\"."
+    },
+    {
+      "Term": "Neptune Mobile Client",
+      "Definition": "A mobile client is the mobile version of a launchpad. With Mobile Client, you create and maintain a launchpad for mobile devices. The Mobile Client uses Apache Cordova plugins to create mobile applications. Apache Cordova provides a way to develop mobile applications using standard web technologies, for example, HTML5, CSS3, and JavaScript."
+    },
+    {
+      "Term": "Neptune NPM Modules",
+      "Definition": "NPM is the package manager for the Node JavaScript (Node.JS) platform. npm is used to publish, discover, install, and develop node programs. In NPM Modules, you install npm packages to your DXP - Open Edition instance. You can use these modules, for example, in the App Editor."
+    },
+    {
+      "Term": "Neptune OData Source",
+      "Definition": "With OData Source, you manage all your OData sources. OData Source consumes data from an OData service that exists outside DXP - Open Edition. With OData Source, you can add OData services and define parameters for your custom authentication and communication with endpoints."
+    },
+    {
+      "Term": "Neptune PDF Designer",
+      "Definition": "You can create PDF templates that reflect your own brand and requirements. You can add images, watermarks, QR codes, tables, headers, footers, and apply your own styles. Every PDF template is an API endpoint. You define areas on the PDF where you want to include data. These areas are filled with data from any target system that can be reached via API."
+    },
+    {
+      "Term": "Neptune Proxy Authentication",
+      "Definition": "With Proxy Authentication, you manage authentication methods for APIs, OData, and remote systems."
+    },
+    {
+      "Term": "Neptune Role",
+      "Definition": "With Role, you can assign roles to users or groups. Roles are used to give users or groups of users specific permissions to perform certain actions within your system. Assigning a role allows you to provide the same permissions to a large group of users rather than setting them manually."
+    },
+    {
+      "Term": "Neptune Rules Engine",
+      "Definition": "With Rules Engine, you can create JSON structured business rules without the need to write code yourself. These rules take an input, compare it against any number of conditions, and return an output based on which conditions have been met."
+    },
+    {
+      "Term": "Neptune Script Editor",
+      "Definition": "In Script Editor, you can create server-side scripts to extend your instance beyond the standard configurations."
+    },
+    {
+      "Term": "Neptune Security",
+      "Definition": "In the Security service group, you can manage users, groups, roles, authentications, certificates, and monitor activities."
+    },
+    {
+      "Term": "Neptune Swagger UI",
+      "Definition": "You can test APIs via Swagger UI. Make test calls with the parameters defined for each operation of the API and see the responses of your test calls. You can perform test calls without implementing the API in an application first."
+    },
+    {
+      "Term": "Neptune Test Plan",
+      "Definition": "With the Test Plan, you can create a plan on when and how your units are tested. A plan reflects your entire test schedule, including the items and features to be tested, and the testing tasks to be performed. Every plan consists of one or multiple units. A Test Plan prepares the units for running the test."
+    },
+    {
+      "Term": "Neptune Test Run",
+      "Definition": "With Test Run, you take your current test plan to run your test units. You can perform as many test runs as you wish for one plan. After you run your test, the results of the tests are displayed as a bar chart. The bar chart summarizes the results of all runs. You need to perform manual tests outside Test Run and then come back to report the outcome."
+    },
+    {
+      "Term": "Neptune Test Unit",
+      "Definition": "With Test Units, you can create unit tests to be used in test plans. Unit testing is a method of software testing in which parts of a software are tested. A unit is the smallest testable part of a software code. To create a unit, you have to split your code into multiple pieces. Then, these pieces (units) can be tested in a series of steps. Each unit can contain one or more steps, depending on the test requirement."
+    },
+    {
+      "Term": "Neptune Theme Designer",
+      "Definition": "With the Theme Designer, you can create application themes for use in the Launchpad and the App Designer. By defining custom CSS, you can change the color scheme, fonts, or background of your application. You can also add a logo. Depending on the UI client and UI framework, you can select, modify, and use themes."
+    },
+    {
+      "Term": "Neptune Tile",
+      "Definition": "A tile is a container that represents an application on the launchpad. With Tile, you can create, assign, and maintain tiles. All applications on the launchpad have at least one corresponding tile. To be displayed on the launchpad, tiles must be grouped in tile groups."
+    },
+    {
+      "Term": "Neptune Tile Group",
+      "Definition": "With Tile Group, you can maintain groups of tiles and define role-based access. Tile groups include several tiles and are displayed on the launchpad. You have to bundle tiles into tile groups to make them appear on the launchpad. Tiles can only appear on the launchpad if they are part of a tile group."
+    },
+    {
+      "Term": "Neptune User ",
+      "Definition": "With User, you can view and manage the users of your system. You can add new users to your system and change the settings of existing users."
+    },
+    {
+      "Term": "OData",
+      "Definition": "Open Data Protocol is an open web protocol for querying and updating data. The protocol allows you to perform operations with resources, using HTTP commands as queries, and receive responses in XML or JSON formats."
+    },
+    {
+      "Term": "OpenUI5",
+      "Definition": "OpenUI5 is a JavaScript application framework designed to build cross-platform, responsive, enterprise-ready applications. It is an open-source project maintained by SAP"
+    },
+    {
+      "Term": "Opportunity ",
+      "Definition": "Any SQL that is qualified according to the BANT criteria and carries an opportunity in our CRM. "
+    },
+    {
+      "Term": "PaaS",
+      "Definition": "Platform as a service (PaaS) is a complete development and deployment environment in the cloud, with resources that enable you to deliver everything from simple cloud-based apps to sophisticated, cloud-enabled enterprise applications"
+    },
+    {
+      "Term": "Partner ",
+      "Definition": "Any business partner that resells our solution and/or helps with implementation of solution build in our platform. "
+    },
+    {
+      "Term": "POC",
+      "Definition": "A proof of concept is a document, presentation or small project that allows prospects to confirm the performance of a solution without fully implementing it."
+    },
+    {
+      "Term": "Private cloud ",
+      "Definition": "The private cloud is defined as computing services offered either over the Internet or a private internal network and only to select users instead of the general public"
+    },
+    {
+      "Term": "Public cloud",
+      "Definition": "The public cloud is defined as computing services offered by third-party providers over the public Internet, making them available to anyone who wants to use or purchase them"
+    },
+    {
+      "Term": "PWA",
+      "Definition": "Progressive Web Apps (PWAs) are web apps that use service workers, manifests, and other web-platform features in combination with progressive enhancement to give users an experience on par with native apps"
+    },
+    {
+      "Term": "RESTful API ",
+      "Definition": "An API that uses HTTP requests to GET, PUT, POST and DELETE data. A RESTful API breaks down a transaction to create a series of small modules. Each module addresses a particular underlying part of the transaction."
+    },
+    {
+      "Term": "RISE with SAP",
+      "Definition": "Made up of key SAP products, including SAP S/4HANA Cloud, and services from SAP and partners, the solution aims to get customers to the cloud through business transformation. To that end, the solution helps enterprises develop new business models to avoid being disrupted, gain efficiencies to fund innovation, and transform mission-critical systems without business risk."
+    },
+    {
+      "Term": "RPA",
+      "Definition": "A Robotic Process Automation is an application that automates business processes through structured inputs and logic. It takes care of the routine and repetitive tasks that are usually time-consuming and monotonous."
+    },
+    {
+      "Term": "SaaS",
+      "Definition": "Software as a service is a software licensing and delivery model in which software is licensed on a subscription basis and is centrally hosted. SaaS is also known as \"on-demand software\" and Web-based/Web-hosted software"
+    },
+    {
+      "Term": "SAP Activate Methodology",
+      "Definition": "The SAP Activate Methodology is the next generation agile approach that delivers ready-to-run business processes optimized for S/4HANA software implementations with a reference solution designed for continuous innovation."
+    },
+    {
+      "Term": "SAP AppGyver ",
+      "Definition": "SAP AppGyver is a no-code tool for professionals to build enterprise-grade applications for desktop, browser, and mobile"
+    },
+    {
+      "Term": "SAP Ariba",
+      "Definition": "Portfolio that includes cloud solutions for procurement, financials, and sourcing and the signature Ariba Network. "
+    },
+    {
+      "Term": "SAP BTP",
+      "Definition": "The SAP Business Technology Platform (BTP) is a Platform as a Service (PaaS) offering for enterprises across industries. The platform can be leveraged for creating new applications, scale-up existing applications, that are hosted in a secure on-demand cloud environment, managed by SAP"
+    },
+    {
+      "Term": "SAP BTP Academy",
+      "Definition": "Topic channel on YouTube that provides instructional videos and visual help guides related to SAP Business Technology Platform and different setup and implementation scenarios."
+    },
+    {
+      "Term": "SAP Business Application Studio",
+      "Definition": "SAP Business Application Studio is a cloud-based professional developer tool for building applications and extending SAP solutions"
+    },
+    {
+      "Term": "SAP Business Suite",
+      "Definition": "SAP Business Suite is a bundle of business applications that provide integration of information and processes, collaboration, industry-specific functionality and scalability"
+    },
+    {
+      "Term": "SAP BusinessObjects",
+      "Definition": "SAP BusinessObjects is a centralized suite of reporting and analytics tools for business intelligence platforms. SAP BO is aimed at business users. It consists of a number of reporting applications that allow users to discover data, perform analysis to derive insights and create reports that visualize the insights."
+    },
+    {
+      "Term": "SAP C/4HANA",
+      "Definition": "SAP C/4HANA is an umbrella term for SAP’s combined customer experience solutions. After completing acquisitions of market leaders such as Hybris, Gigya and CallidusCloud, SAP C/4HANA  now ties together solutions to support all front-office functions, including consumer data protection, marketing, commerce, sales and customer service. "
+    },
+    {
+      "Term": "SAP Concur",
+      "Definition": "Concur is an SAP SaaS solution that provides travel and expense management services to our customers. Concur integrates seamlessly with SAP on premise solutions via an ABAP add-on installed in the on premise SAP ERP system."
+    },
+    {
+      "Term": "SAP Fiori",
+      "Definition": "Is a set of design principles (or design language) from SAP that is there to help developers plan and build UI5 applications in line with SAP’s UX strategy"
+    },
+    {
+      "Term": "SAP G/L Account",
+      "Definition": "G/L accounts are also called Cost Elements in SAP. They are a classification by expense or revenue type."
+    },
+    {
+      "Term": "SAP GUI",
+      "Definition": "SAP GUI is an acronym of the term SAP Graphical User Interface which is part and parcel of the Presentation layer of SAP. Ideally there are three layers that are involved in SAP and these are Application, Database and Presentation. And the SAP GUI is a client of the later layer. "
+    },
+    {
+      "Term": "SAP HANA",
+      "Definition": "SAP HANA is an in-memory, column-oriented, relational database management system developed and marketed by SAP SE. Its primary function as the software running a database server is to store and retrieve data as requested by the applications"
+    },
+    {
+      "Term": "SAP HANA XS",
+      "Definition": "SAP HANA XS (HANA Extended Application Services) classic model is an application server. An application server that resides in the SAP HANA database."
+    },
+    {
+      "Term": "SAP Jam",
+      "Definition": "SAP Jam is a cloud-based social media platform from SAP.  SAP Jam allows users to collaborate and share documents and ideas, rather than sharing them via emails or other channels that are harder to track and manage."
+    },
+    {
+      "Term": "SAP kernel",
+      "Definition": "The SAP kernel is the central program of SAP NetWeaver written in C. It’s an interface between the SAP application and the operating system."
+    },
+    {
+      "Term": "SAP Learning Center",
+      "Definition": "The physical locations owned by SAP where in-person SAP Learning Class courses and other events take place."
+    },
+    {
+      "Term": "SAP Leonardo",
+      "Definition": "SAP Leonardo is a collection of intelligent technologies—machine learning, blockchain, data intelligence, big data, Internet of Things (IoT), and analytics—and services combined with industry-domain expertise to help companies innovate faster and embark on their digital transformation journey."
+    },
+    {
+      "Term": "SAP Maintenance Optimizer",
+      "Definition": "Application within SAP Solution Manager that guides you through planning and downloading stack XML files for enhancement packages, support packages, and additional update packages."
+    },
+    {
+      "Term": "SAP Mendix",
+      "Definition": "Mendix is an SAP Solution Extension partner, which means SAP has fully adopted the Mendix Platform as their platform to extend SAP solutions like SAP Business Suite, SAP S/4HANA, SuccessFactors, and more."
+    },
+    {
+      "Term": "SAP Model Company",
+      "Definition": "SAP Model Company is a pre-packaged, end-to-end collection of SAP applications and Best Practices narrowly focused on specific industries and different lines of business."
+    },
+    {
+      "Term": "SAP NetWeaver",
+      "Definition": "The SAP NetWeaver is the technical foundation and solution stack for SAP applications such as SAP R/3, SAP ECC, and SAP S/4HANA."
+    },
+    {
+      "Term": "SAP R/1",
+      "Definition": "ERP software from SAP that uses a 1-tier architecture. Originally called RF, which stands for real-time finances. R stands for real-time and 1 stands for third generation."
+    },
+    {
+      "Term": "SAP R/2",
+      "Definition": "ERP software from SAP for mainframe systems. SAP R/2 has a 2-tier architecture. Operation was handled through text terminals. R stands for real-time and 2 stands for third generation."
+    },
+    {
+      "Term": "SAP RDS",
+      "Definition": "Referred as Rapid Deployment Solutions, these are SAP solutions with clear scopes of work and a fixed rate. The SAP solutions connect SAP software with implementation and support services provided by SAP consultants or SAP partners."
+    },
+    {
+      "Term": "SAP S/4HANA",
+      "Definition": "SAP S/4HANA is an enterprise resource planning software for large enterprises developed by SAP SE. It is the successor to SAP R/3 and SAP ERP and is optimized for SAP's in-memory database SAP HANA"
+    },
+    {
+      "Term": "SAP SuccessFactors",
+      "Definition": "SAP SuccessFactors solutions are cloud-based HCM software applications that support core HR and payroll, talent management, HR analytics and workforce planning, and employee experience management."
+    },
+    {
+      "Term": "SAP UI5",
+      "Definition": "SAP UI5 is the development tool from SAP toolkit, offering various features that the users can use to enhance their user experience to create apps with rich user interfaces for Web business applications."
+    },
+    {
+      "Term": "Solution",
+      "Definition": "Our product (Neptune DXP – SAP/Open Edition #+ Neptune Developer Tools (AppBuilder, MBS) + Marketplace and Portal) and services (application and solution build)."
+    },
+    {
+      "Term": "SQL",
+      "Definition": "Any MQL that has been further qualified according to the BANT framework and where we have a meeting schedule to demo our solution. "
+    },
+    {
+      "Term": "SSO",
+      "Definition": "Single Sign-on is an authentication method that lets a user log into several related but independent software systems with a single ID and password."
+    },
+    {
+      "Term": "Stateless & Stateful",
+      "Definition": "Stateless Protocol does not require the server to retain the server information or session details. Stateful Protocol require server to save the status and session information"
+    },
+    {
+      "Term": "Transactional Data",
+      "Definition": "Transactional data is data related to a single business event. such as a purchase requisition or a request for payment. When you create a requisition, for example, SAP creates an electronic document for that particular transaction"
+    },
+    {
+      "Term": "UI",
+      "Definition": "Short for 'User Interface'. Everything designed into an information device with which a customer/user may interact."
+    },
+    {
+      "Term": "WTP",
+      "Definition": "Willingness to pay / Available budget for purchasing our solution. "
+    },
+    {
+      "Term": "XML",
+      "Definition": "Extensible Markup Language is a language with a simple formal syntax, convenient for creating and processing documents by programs and at the same time convenient for reading and creating documents by a person."
+    }
+ 
+]
+
+function display(){
+  var glossword = excel[Math.floor(Math.random() * excel.length)];
+  oTitle.setText(glossword.Term);
+  oText.setText(glossword.Definition);
+}

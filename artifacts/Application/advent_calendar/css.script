@@ -1,0 +1,523 @@
+.cards .sapMFlexItem {
+	position: relative;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+   
+}
+
+/*Test .cards .sapMFlexItem*/
+.findMe {
+  background-color: rgba(102, 36, 36, 0);
+}
+
+.picHov:hover {
+  transform: scale(1.1);
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)); */
+	z-index: 2;
+	/* box-shadow: 2px 2px 2px #000; */
+
+} 
+/*.sapFCard*/
+.chrisCard {
+	width: 190px;   
+	height: 190px; /* 205 px  or 180px*/
+}
+.image  {
+  width: 190px;
+  height: 190px;
+}
+/* .sapMPageBgStandard {
+	background-color: #fcd089;
+} */
+
+.snow-bg {
+   position: relative;
+   background-color: #fcd089;
+}
+
+.snow-bg:after {
+   content: '';
+   display: block;
+   position: absolute;
+   z-index: 2;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   pointer-events: none;
+   background-image: url('https://library.elementor.com/resources/christmas-snow-effect/s1.png'), url('https://library.elementor.com/resources/christmas-snow-effect/s2.png'), url('https://library.elementor.com/resources/christmas-snow-effect/s3.png');
+    animation: snow 10s linear infinite;
+}
+
+@keyframes snow {
+ 0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+ 100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+
+
+/* ribbon */
+
+
+.letter {
+  --color1: #3ea683;
+  --color2: #ff4a64;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--color1),
+    var(--color1) 30px,
+    var(--color2) 30px,
+    var(--color2) 60px
+  );
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  animation: 40s linear 0s infinite move;
+}
+
+@keyframes move {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: 1000px;
+  }
+}
+
+/*   */
+
+.chrisText  {
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+#oDialog-cont {
+	width: 42rem;
+}
+.LinkWord {
+	font-size: 1.1rem;
+	font-weight: bold;
+  margin-top: 0.5rem;
+  color: rgb(255, 255, 255) !important;
+}
+
+.textNextToLink {
+	font-size: 1.1rem;
+	font-weight: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.3rem;
+
+}
+
+/*   */
+
+
+.christmas-tree {
+  position: relative;
+  top:100px;
+  cursor: pointer;
+}
+
+.tree {
+  position: absolute;
+  width: 20px;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-bottom: 55px solid #823723;
+  height:0;
+  animation: drop 1s linear;
+}
+
+.tree:before {
+  content:"";
+  position: absolute;
+  background-color: #823723;
+  border-radius: 50%;
+  width: 30px;
+  height:10px;
+  top:50px;
+  left:-5px;
+}
+
+.tree:after {
+  content:"";
+  position: absolute;
+  border-right: 75px solid transparent;
+  border-left: 75px solid transparent;
+  border-bottom: 200px solid #107261;
+  width:0;
+  height:0;
+  top:-180px;
+  left:-65px;
+}
+
+.tree-details {
+  position: absolute;
+  width: 150px;
+  height: 10px;
+  background-color: #107261;
+  border-radius: 50%;
+  top:15px;
+  left:-65px;
+  z-index:1;
+}
+
+.tree-details:before {
+  content:"";
+  position: absolute;
+  background-color: #0a897c;
+  border-radius:50%;
+  width: 5px;
+  height: 5px;
+  top:-10px;
+  left:20px;
+  box-shadow: 50px -50px #0a897c, 30px -70px #0a897c, 40px -130px #0a897c, 70px -5px #0a897c, 85px -75px #0a897c;
+}
+
+.lights {
+  position: absolute;
+  opacity:0;
+  animation: light 2s linear infinite, drop 1s linear .5s forwards;
+}
+
+@keyframes light {
+  0% {filter: drop-shadow(0 0 2px #fefae0) brightness(1);}
+  50% {filter: drop-shadow(0 0 5px #fefae0) brightness(1.35);}
+  100% {filter: drop-shadow(0 0 2px #fefae0) brightness(1);}
+}
+
+.row-one {
+  position: absolute;
+  background-color: #e9d8a6;
+  border-radius:50%;
+  width:10px;
+  height:10px;
+  top: -120px;
+  left: -15px;
+  box-shadow: 10px 10px #e9d8a6, 25px 15px #e9d8a6, 40px 18px #e9d8a6, 54px 15px #e9d8a6;
+}
+
+.row-two {
+  position: absolute;
+  background-color: #e9d8a6;
+  border-radius:50%;
+  width:10px;
+  height:10px;
+  left:-42px;
+  top:-45px;
+  box-shadow: 10px 10px #e9d8a6, 25px 17px #e9d8a6, 40px 24px #e9d8a6, 55px 28px #e9d8a6, 70px 30px #e9d8a6, 85px 29px #e9d8a6, 100px 25px #e9d8a6, 112px 20px #e9d8a6;
+}
+
+.balls {
+  position: absolute;
+  background-color: #f34653;
+  width:15px;
+  height: 15px;
+  border-radius:50%;
+  z-index:2;
+  opacity:0;
+  box-shadow: -20px -55px #f34653, 25px -70px #f34653;
+  animation: drop 1s linear 1s forwards;
+}
+
+.balls:before {
+  content:"";
+  position: absolute;
+  background-color: #f34653;
+  width:13px;
+  height: 13px;
+  border-radius:50%;
+  left:-40px;
+  top:-10px;
+  box-shadow: 100px 10px #f34653, 25px -80px #f34653, 60px -120px #f34653;
+}
+
+.balls:after {
+  content:"";
+  position: absolute;
+  background-color: #94d2bd;
+  width:10px;
+  height: 10px;
+  border-radius:50%;
+  top:-40px;
+  left:40px;
+  box-shadow: -35px -35px #94d2bd, -35px -105px #94d2bd, -60px 45px #94d2bd;
+}
+
+.star {
+  position: absolute;
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-right: 25px solid transparent;
+  border-bottom: 17.5px solid #f9c819;
+  border-left: 25px solid transparent;
+  transform: rotate(-35deg);
+  top:-190px;
+  left:-9px;
+  opacity:0;
+  animation: dropStar 1s linear 1.5s forwards;
+    }
+
+.star:before {
+      border-bottom: 20px solid #f9c819;
+      border-left: 7.5px solid transparent;
+      border-right: 7.5px solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -12.5px;
+      left: -17.5px;
+      display: block;
+      content: '';
+      transform: rotate(-35deg);
+    }
+
+.star:after {
+      position: absolute;
+      display: block;
+      top: 0.75px;
+      left: -26.25px;
+      width: 0px;
+      height: 0px;
+      border-right: 25px solid transparent;
+      border-bottom: 17.5px solid #f9c819;
+      border-left: 25px solid transparent;
+      transform: rotate(-70deg);
+      content: '';
+    }
+   
+    @keyframes drop {
+  0% {transform: translateY(-470px) scaleY(0.9); opacity: 0;}
+  5% {opacity: 1;}
+  50% {transform: translateY(0px) scaleY(1); opacity: 1;}
+  65% {transform: translateY(-15px) scaleY(0.9); opacity: 1;}
+  75% {transform: translateY(-18px) scaleY(0.9); opacity: 1;}
+  100% {transform: translateY(0px) scaleY(1); opacity: 1;}
+}
+
+   @keyframes dropStar {
+  0% {transform: translateY(-470px) scaleY(0.9) rotate(-35deg); opacity: 0;}
+  5% {opacity: 1;}
+  50% {transform: translateY(0px) scaleY(1) rotate(-35deg); opacity: 1;}
+  65% {transform: translateY(-15px) scaleY(0.9) rotate(-35deg); opacity: 1;}
+  75% {transform: translateY(-18px) scaleY(0.9) rotate(-35deg); opacity: 1;}
+  100% {transform: translateY(0px) scaleY(1) rotate(-35deg); opacity: 1;}
+  100% {transform: translateY(0px) scaleY(1) rotate(-35deg); opacity: 1;}
+}
+
+.shadow {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0.7);
+  width: 50px;
+  height: 20px;
+  z-index:-1;
+  top:50px;
+  left:-10px;
+  animation: scale .5s linear forwards;
+}
+
+@keyframes scale {
+  0% {transform: scaleX(1);}
+  100% {transform: scaleX(3);}
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background: dimgray;
+  height: 70px;
+}
+
+footer h4 {
+  padding-left: 25px;
+  padding-top: 15px;
+}
+
+/* Ribbons! */
+
+/*red #c44c36 blue 2980b9*/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:700);
+
+/* common */
+.ribbon {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+}
+.ribbon::before,
+.ribbon::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  display: block;
+  border: 5px solid #6e000b;
+}
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 225px;
+  padding: 15px 0;
+  background-color: #a80012;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  color: #a80012;
+  font: 700 18px/1 'Lato', sans-serif;
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* top left*/
+.ribbon-top-left {
+  top: -10px;
+  left: -10px;
+}
+.ribbon-top-left::before,
+.ribbon-top-left::after {
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+.ribbon-top-left::before {
+  top: 0;
+  right: 0;
+}
+.ribbon-top-left::after {
+  bottom: 0;
+  left: 0;
+}
+.ribbon-top-left span {
+  right: -25px;
+  top: 30px;
+  transform: rotate(-45deg);
+}
+
+/* top right*/
+.ribbon-top-right {
+  top: -10px;
+  right: -10px;
+}
+.ribbon-top-right::before,
+.ribbon-top-right::after {
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+.ribbon-top-right::before {
+  top: 0;
+  left: 0;
+}
+.ribbon-top-right::after {
+  bottom: 0;
+  right: 0;
+}
+.ribbon-top-right span {
+  left: -25px;
+  top: 30px;
+  transform: rotate(45deg);
+}
+
+/* bottom left*/
+.ribbon-bottom-left {
+  bottom: -10px;
+  left: -10px;
+}
+.ribbon-bottom-left::before,
+.ribbon-bottom-left::after {
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+.ribbon-bottom-left::before {
+  bottom: 0;
+  right: 0;
+}
+.ribbon-bottom-left::after {
+  top: 0;
+  left: 0;
+}
+.ribbon-bottom-left span {
+  right: -25px;
+  bottom: 30px;
+  transform: rotate(225deg);
+}
+
+/* bottom right*/
+.ribbon-bottom-right {
+  bottom: -10px;
+  right: -10px;
+}
+.ribbon-bottom-right::before,
+.ribbon-bottom-right::after {
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+.ribbon-bottom-right::before {
+  bottom: 0;
+  left: 0;
+}
+.ribbon-bottom-right::after {
+  top: 0;
+  right: 0;
+}
+.ribbon-bottom-right span {
+  left: -25px;
+  bottom: 30px;
+  transform: rotate(-225deg);
+}
+/* <div class="box">
+  <div class="ribbon ribbon-top-left"><span>.</span></div> 
+  <div class="ribbon ribbon-bottom-right"><span>.</span></div>
+</div> */
+
+
+#oTitle1-inner {
+	font-size: 3rem;
+}
+
+
+.green {
+  font-size: 1.3rem;
+  color: #3ea683;
+}
+
+.red {
+	font-size: 1.3rem;
+	color: #ff4a64;
+}
+
+/* merry */ 
+@import url('https://fonts.cdnfonts.com/css/christmas-classica');
+.merry {
+  font-family: 'Brush Script MT', cursive;
+  color: #a80012;
+  font-size: 7.5rem;
+}
+
+
+
+.dialog {
+ 
+  width: 60rem;
+}
+.LinkWord:hover:not(.LinkWord .sapMLnkDsbl) {
+ color: rgb(255, 255, 255);
+}
+html.sap-desktop .LinkWord:hover:not(.sapMLnkDsbl) {
+ text-decoration: none;
+}
+
+.LinkWord:after {
+    display: block;
+    content: "";
+    border: 0.6px solid rgb(255, 255, 255);
+    visibility: hidden;
+
+}

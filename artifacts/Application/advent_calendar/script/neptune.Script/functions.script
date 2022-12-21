@@ -1,0 +1,158 @@
+if (sap.n) {
+
+var localViewID = this.getId() + "--";
+// console.log("localViewID:")
+
+// console.log(localViewID)
+
+//var reference = (localViewID + '--oVBox');
+
+} else {
+
+    var localViewID = "";
+
+}
+var startOfImage = localViewID
+console.log(localViewID);
+
+var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+var date = new Date();
+var today = date.toLocaleDateString("en-UK", options);
+const todayArray = today.split(" ");
+const month = "December";
+
+
+setTimeout(function() {
+    var parent = document.createElement('div');
+    var kid1 = document.createElement('div');
+    var kid2 = document.createElement('div');
+    var left = document.createElement('span');
+    var right = document.createElement('span');
+    left.innerHTML = "."
+    right.innerHTML = "."
+    kid1.appendChild(left);
+    kid2.appendChild(right);
+    parent.setAttribute('class', 'box');
+    kid1.setAttribute('class', 'ribbon ribbon-top-left');
+    kid2.setAttribute('class', 'ribbon ribbon-bottom-right');
+    parent.appendChild(kid1);
+    parent.appendChild(kid2);
+    var number = todayArray[1];
+    oHBoxChris.getId();
+    var content = document.getElementById(localViewID+'oHBoxChris');
+    var dataName = content.firstChild.attributes.id.nodeValue;
+    var dataBox = dataName.replace(/[0-9]/g, '');
+    var dataNumber = dataName.replace(/\D/g,'');
+    
+    var ribbonIndex = Number(dataNumber)+Number(number)-1
+    console.log(ribbonIndex)
+    if (todayArray[2] === month && number < 26 ){
+        var decemberRibbon = document.getElementById("__data"+ribbonIndex);
+        decemberRibbon.appendChild(parent);
+    } else {
+        var loaderWrap1 = document.getElementById(dataName);
+        loaderWrap1.appendChild(parent);
+    }
+    
+    
+    
+    // add fade
+    var styles = {
+        opacity: 0.4
+    };
+    //var text = 13+1
+    // whitening
+    var nextDay = Number(number)+1
+    if (todayArray[2]===month) {
+        for (let i = nextDay ; i < 26; i++) {    
+            $("#"+localViewID+"ChrisImage"+i).css(styles);
+        }
+    } else {
+        for (let i = 1 ; i < 26; i++) {    
+            $("#"+localViewID+"ChrisImage"+i).css(styles);
+        }
+    }
+    //hover effect
+    if (todayArray[2]===month) {
+        for (let j = 1 ; j < nextDay; j++) {
+            $("#__data"+(Number(dataNumber)+j-1)).addClass("picHov");
+        }
+    } else {
+        $("#"+dataName).addClass("picHov");
+    }
+}, 1000);
+
+function dialog(tHis){
+    let name = tHis.sId;
+    let num = name.replace(localViewID+"ChrisImage", "");
+    if (Number(num) <= Number(todayArray[1]) && todayArray[2] === month) {
+        oDialog.open();
+    }
+}
+
+
+// var correctIndex = number;
+// if (todayArray[2] === month && number < 26) {
+//     var decemberRibbon = document.getElementById(dataBox + (correctIndex - 1));
+//     decemberRibbon.appendChild(parent);
+// } else {
+//     var loaderWrap1 = document.getElementById(dataBox);
+//     loaderWrap1.appendChild(parent);
+// }
+//Launchpad
+// setTimeout(function() {
+//     var parent = document.createElement('div');
+//     var kid1 = document.createElement('div');
+//     var kid2 = document.createElement('div');
+//     var left = document.createElement('span');
+//     var right = document.createElement('span');
+//     left.innerHTML = "."
+//     right.innerHTML = "."
+//     kid1.appendChild(left);
+//     kid2.appendChild(right);
+//     parent.setAttribute('class', 'box');
+//     kid1.setAttribute('class', 'ribbon ribbon-top-left');
+//     kid2.setAttribute('class', 'ribbon ribbon-bottom-right');
+//     parent.appendChild(kid1);
+//     parent.appendChild(kid2);
+//     var number = todayArray[1];
+//     var correctIndex = number+3;
+//     if (todayArray[2] === month && number < 26 ){
+//         var decemberRibbon = document.getElementById("__data"+correctIndex);
+//         decemberRibbon.appendChild(parent);
+//     } else {
+//         var loaderWrap1 = document.getElementById("__data4");
+//         loaderWrap1.appendChild(parent);
+//     }
+
+//     // add fade
+//     var styles = {
+//         opacity: 0.4
+//     };
+//     //var text = 13+1
+//     // whitening
+//     var nextDay = number+1
+//     if (todayArray[2]===month) {
+//         for (let i = nextDay ; i < 26; i++) {    
+//             $("#oImage"+i).css(styles);
+//         }
+//     } else {
+//         for (let i = 1 ; i < 26; i++) {    
+//             $("#oImage"+i).css(styles);
+//         }
+//     }
+//     //hover effect
+//     if (todayArray[2]===month) {
+//         for (let j = 1 ; j < nextDay; j++) {
+//             $("#__data"+(j+3)).addClass("picHov");
+//         }
+//     } else {
+//         $("#__data4").addClass("picHov");
+//     }
+// }, 1000);
+
+
+
+
+
+

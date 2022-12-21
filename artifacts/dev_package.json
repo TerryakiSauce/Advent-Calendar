@@ -1,0 +1,46 @@
+{
+	"id": "64fa261a-2172-ed11-9f60-000d3a6554d3",
+	"createdAt": "2022-12-02T09:10:02.670Z",
+	"createdBy": "terry.avgenikou@neptune-software.com",
+	"git": {
+		"remote": "https://github.com/TerryakiSauce/Advent-Calendar.git"
+	},
+	"name": "Advent Calendar",
+	"description": null,
+	"ver": "22.12.21.915",
+	"enableCICD": true,
+	"apps": [
+		{
+			"id": "f9a8cf8f-506a-ed11-ac20-0050f279cdef",
+			"application": "advent_calendar",
+			"title": "",
+			"description": ""
+		}
+	],
+	"api": [],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [],
+	"jsclass": [],
+	"jsscript_group": [],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [],
+	"category": [],
+	"launchpad": [],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": [],
+	"events": [],
+	"media_library": []
+}

@@ -1,0 +1,3 @@
+if ( todayArray[1] === "25") {
+    oApp.to(Quiz);
+}
